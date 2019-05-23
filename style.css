@@ -1,0 +1,202 @@
+body {
+
+  margin-left: 15%;
+  background-color: #111111;
+  padding-top: 80px;
+  font-size: 1.3em;
+  word-break: keep-all;
+  color: #555555;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin-left: 5rem;
+  }
+}
+
+#contentBox {
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+  margin-bottom: 5%;
+  margin-left: 0;
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 700px) {
+  #contentBox {
+    margin-left: 0;
+  }
+}
+
+.button, #theButton, #theButton2 {
+  z-index: 1000;
+  visibility: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1ca7e8;
+  position: absolute;
+  top: 20rem;
+  left: 33rem;
+  -webkit-box-shadow: inset 5px 5px 5px grey;
+          box-shadow: inset 5px 5px 5px grey;
+  color: #555555;
+  -webkit-animation: blinkButton .7s infinite linear;
+          animation: blinkButton .7s infinite linear;
+}
+
+@-webkit-keyframes blinkButton {
+  0% {
+    -webkit-box-shadow: inset 5px 5px 5px #555555;
+            box-shadow: inset 5px 5px 5px #555555;
+  }
+  100% {
+    -webkit-box-shadow: -10px 5px 5px transparent;
+            box-shadow: -10px 5px 5px transparent;
+  }
+}
+
+@keyframes blinkButton {
+  0% {
+    -webkit-box-shadow: inset 5px 5px 5px #555555;
+            box-shadow: inset 5px 5px 5px #555555;
+  }
+  100% {
+    -webkit-box-shadow: -10px 5px 5px transparent;
+            box-shadow: -10px 5px 5px transparent;
+  }
+}
+
+.ferry-container {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  opacity: .5;
+  top: 13rem;
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: floating 1.2s linear infinite;
+          animation: floating 1.2s linear infinite;
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: 100;
+}
+
+@-webkit-keyframes floating {
+  0%   {left:200px; top:215px;}
+  25%  {left:240px; top:320px;}
+  50%  {left:220px; top:270px;}
+  75%  {left:150px; top:350px;}
+  100% {left:200px; top:215px;}
+}
+
+/* Standard syntax */
+@keyframes floating {
+  0%   {left:200px; top:215px;}
+  25%  {left:240px; top:320px;}
+  50%  {left:220px; top:270px;}
+  75%  {left:150px; top:350px;}
+  100% {left:200px; top:215px;}
+}
+
+svg {
+  position: absolute;
+  left: -20%;
+  top: -165%;
+  z-index: 1;
+  opacity: .7;
+  width: 2000px;
+  height: 2000px;
+}
+
+.ferry_body {
+  width: 170px;
+  height: 150px;
+  background-color: #1ca7e8;
+  opacity: .8 inherit;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 12px 210px 1px #1ca7e8;
+          box-shadow: 10px 12px 210px 1px #1ca7e8;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  z-index: 2;
+}
+
+.ferry_body-outtercore {
+  width: 100px;
+  height: 90px;
+  background-color: #c7fbfe;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: 20%;
+}
+
+.ferry_body-innercore {
+  background-color: #c7fbfe;
+  width: 70px;
+  height: 80px;
+}
+
+.smallsparkle-3 {
+  position: relative;
+  top: 2%;
+}
+
+.sparkle {
+  width: 30px;
+  height: 30px;
+  background-color: #1ca7e8;
+  border-radius: 50%;
+  opacity: .5;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  margin-top: 6%;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 3px 5px #1ca7e8;
+          box-shadow: 2px 2px 3px 5px #1ca7e8;
+}
+
+.sparkleouttercore {
+  width: 20px;
+  height: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #7eecfd;
+  position: relative;
+  top: 20%;
+}
+
+.sparkleinnercore {
+  width: 10px;
+  height: 10px;
+  background-color: #c7fbfe;
+}
+
+.sparkle-2 {
+  position: relative;
+  left: 17%;
+}
+
+.smallsparkle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #1ca7e8;
+  opacity: .3;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-box-shadow: 2px 2px 3px 5px #1ca7e8;
+          box-shadow: 2px 2px 3px 5px #1ca7e8;
+  position: relative;
+  left: 7%;
+}
+
+.smallsparkle-2 {
+  position: relative;
+  left: 25%;
+}
+/*# sourceMappingURL=style.css.map */
+
